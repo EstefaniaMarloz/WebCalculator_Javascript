@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+body {
+    background-color: white;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Georama', sans-serif;
+    font-size: 90.0%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2rem;
+    border: 1px solid gray;
+}
+
+.calculator-display {
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid gray;
+    overflow-x: auto;
+
+}
+
+.calculator-keypad {
+    display: flex;
+    width: 100%;
+
+}
+
+.keypad-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.keypad-button {
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(240, 39, 4);
+    border: 1 px solid gray;
+}
+
+.keypad-button:hover {
+    transition: .25s;
+    filter: brightness(80%)
+}
+
+.keypad-button.gray {
+    background-color: gray;
+}
+
+.keypad-button.large {
+    width: 50%;
+}
+
+.keypad-button.largeC {
+    background-color: rgb(114, 0, 0);
+    width: 50%;
+}
+
+.keypad-button.dark {
+    background-color: gray;
+}
